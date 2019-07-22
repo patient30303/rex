@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/lesson16.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+</head>
+
+<body>
+
+    
+
+
+<div class="footer">
+    
+    <ul class="topbar">
+    <li><a href="*">關於我們</a></li>
+    <li><a href="*"><i class="fas fa-info-circle"></i> FAQ</a></li>
+    <li><a href="*">使用說明</a></li>
+    </ul>
+   
+    <h1 data-aos="fade-up"><i class="far fa-address-card"></i> Datasheet </h1>
+    
+
+
+    <div class="content" data-aos="fade-up" data-aos-delay="1200">
+        <div class="addList">
+
+
+            <form>
+            <input required type="text" class="text" placeholder="　中文名字" title="請填寫中文名字" > 
+
+
+            
+            <input type="text" class="englishnme" placeholder="　英文名" title="請填寫英文名字">
+
+
+
+            <input type="text" placeholder="　性別" class="gender" title="請填寫您的性別">
+            <input type="text" minlength="3" maxlength="12" placeholder="　電話" class="phonenum" title="請填寫您的電話">
+            <input type="text"  id="email" placeholder="　郵件" class="mail" title="請填寫您的郵件" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+            <input type="radio" name="gender" value="male" ><h4>
+            本人已详阅及明白此申请 之重要事项，并同意接受其 条 款限 制。</h4>
+            <span><a href='#list'><input type="button" class="send" value="新增" data-aos="fade-in"></a></span>
+            
+            <input type="button" class="delete" value="刪除" data-aos="fade-in">
+            </form>
+    <div class="angledown"><i class="fas fa-angle-down"></i></div>
+    
+    </div>
+    
+    <ul class="list" id="list">
+    
+  
+
+    </ul>
+    
+    
+    </div>
+    <span2><i class="fas fa-language"></i>中文名</span2>
+    <span3><i class="fas fa-spell-check"></i>英文名</span3>
+    <span4><i class="fas fa-venus-double"></i>性別</span4>
+    <span5><i class="fas fa-mobile-alt"></i>電話</span5>
+    <span6><i class="fas fa-mail-bulk"></i>郵件</span6>
+    
+    </div>
+
+
+
+
+    <script src="js/lesson18.js" async defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1200,
+        });
+
+        $(".num").counterUp({
+            delay: 10,
+            time: 2000
+        });
+    </script>
+</body>
+
+</html>
